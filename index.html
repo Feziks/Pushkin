@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Главная</title>
+</head>
+<body>
+<style>
+    body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Russo One', sans-serif; 
+    background-color: white;
+}
+.site{
+    height: 2000px;
+    width: 100%;
+    display: flex;
+}
+nav{
+        width: 450px;
+        height: 3660px;
+        background-color: #ffff;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(7, 6, 6, 0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        margin: 0 0 0 -380px;
+        transition: 2.8s;
+            
+}
+nav:hover{
+    margin: 0;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.button_for_dop_help{
+    background-color: #ffff;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 10px 0;
+    font-weight: 900;
+    letter-spacing: 3px;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 300px 0 0 300px;
+}
+.button_for_dop_help:hover{
+    color: #976149;
+    font-size: 21px;
+    background-color: #ffffff;
+}
+.column{
+    flex-direction: column;
+}
+.banner{
+    width: 100%;
+    height: 700px;
+}
+.zagolovok{
+    color: white;
+    font-weight: 3000;
+    font-size: 70px;
+    letter-spacing: 2px;
+    position: absolute;
+    text-shadow: 3px 3px 3px black;
+    margin: -490px 0 0 10px;
+}
+.li1{
+    color: white;
+    position: absolute;
+    text-shadow: 3px 3px 3px black;
+    font-size: 40px;
+    margin: -400px 0 0 10px;
+}
+.back{
+    background-color: #fff;
+    padding: 30px;
+    height: 3000px;
+    width: 94%;
+    margin: -90px 0 0 0;
+    border-radius: 100px;
+    position: absolute;
+}
+.push_this_is{
+    background: #fff;
+    width: 80%;
+    height: 400px;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+}
+.picture1{
+    width: 400px;
+    height: 400px;
+    border-radius: 40px;
+}
+.push_this_is1{
+  font-size: 30px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, black, #976149);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 100px 0 0 20px;
+}
+.zagolovok1{
+    font-size: 80px;
+    text-align: center;
+    margin: 100px 0 0 600px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, black, #976149);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+}
+button{
+    transition: 2s;
+}
+.span1{
+    font-size: 50px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, black, #976149);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin: 0px 0 0 20px;
+}
+.p1{
+    font-size: 20px;
+}
+footer{
+    background-color: #6b5e57;
+    border-radius: 50px;
+    width: 93%;
+    height: 300px;
+    position:absolute;
+    margin: 2600px 0 0 0;
+    padding: 30px;
+    color: #ffff;
+}
+.foot1{
+    display: flex;
+    position: absolute;
+    margin: 2880px 0 0 600px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+.ghu{
+    margin: 2490px 0 0 1200px;
+    position: absolute;
+}
+.book1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: -60px 0 0 1500px;
+}
+.book2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: 0 0 30px 1300px;
+}
+.but{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 0 378px;
+}
+</style>
+<script src="menu.js"></script>
+    <div class="site">
+        <nav id="menu">
+            <img src="img/MENU.png" alt="" class="but">
+            <div class="logo"> 
+                <img src="img/images-QuSW9PW9Z-transformed.png" alt="" class="logo">
+            </div>
+            <div>
+                <h1>
+                    А. С. Пушкин
+                </h1>
+            </div>
+            <div class="column">
+                <button type="button" onclick="location.href='#lichnaylife'" class="button_for_dop_help">О поэте</button>
+                <button type="button" onclick="location.href='proiz.html'" class="button_for_dop_help">Произведения</button>
+                <button type="button" onclick="location.href='#lasthp'" class="button_for_dop_help">Дуэль и смерть поэта</button>
+                <button type="button" onclick="location.href='facts.html'" class="button_for_dop_help">Интересные факты</button>
+                <button type="button" onclick="location.href='https://github.com/Feziks'" class="button_for_dop_help">Связь с разработчиком</button>
+            </div>
+        </nav>
+        <div class="right">
+            <section>
+                <div>
+                    <img src="img/w816h301-2d37d4a5.jpg" alt="" class="banner">
+                </div>
+                <div>
+                    <h1 class="zagolovok">
+                        Александр Сергеевич Пушкин
+                    </h1>
+                    <li class="li1">
+                        Один из самых авторитетных литературных деятелей первой трети XIX века.
+                    </li>
+                </div>
+            </section>
+            <section class="back">
+                <div class="push_this_is">
+                    <img src="img/1d.jpg" alt="" class="picture1">
+                    <h1 class="push_this_is1">
+                        Александр Сергеевич Пушкин - один из самых авторитетных литературных деятелей первой трети XIX века. Ещё при жизни Пушкина сложилась его репутация величайшего национального русского поэта. Пушкин рассматривается как основоположник современного русского литературного языка.
+                    </h1>
+                </div>
+                <img src="img/1678451290_gas-kvas-com-p-kniga-risunok-cherno-belii-na-prozrachnom-8.png" alt="" class="book2">
+                <div id="lichnaylife">
+                    <h1 class="zagolovok1">
+                        О поэте
+                    </h1>
+                    <p class="p1">
+                        Александр Сергеевич Пушкин (1799-1837 гг.) – великий русский поэт, прозаик, драматург. Автор бессмертных произведений в стихах и прозе: романов “Евгений Онегин”, “Дубровский”, известных поэм “Руслан и Людмила”, “Кавказский пленник”, повести “Пиковая дама” и многих других, а также сказок для детей. <br><br><br>
+
+                        <span class="span1">Ранние годы</span> <br><br><br>
+
+Александр Сергеевич Пушкин родился 6 июня (по старому стилю 26 мая) 1799 года в Москве в семье нетитулованного дворянского рода. Прадедом поэта по матери был африканец Абрам Петрович Ганнибал, являвшийся воспитанником и слугой царя Петра I. <br>
+В семье, кроме Александра Сергеевича, было еще двое детей – сын Лев и дочь Ольга. С 1805 по 1810 год Пушкин проводил много времени (особенно летом) у своей бабушки в подмосковном селе Захарове. Именно бабушка наняла Арину Родионовну Яковлеву, няню, которую так полюбил юный Пушкин. <br><br><br>
+
+<span class="span1">Образование и начало творческого пути</span> <br><br><br>
+
+В 1811 году Пушкин учился в Царскосельском Лицее. В биографии Пушкина важно выделить, что впервые его стихи появляются в печати в 1814 году, в журнале «Вестник Европы», где публикуется его стихотворение «К другу-стихотворцу». В этот же период поэта принимают в литературное общество «Арзамас». <br>
+Вольтер и Эварист Парни были любимыми авторами юного Пушкина. <br>
+На дальнейшее творчество молодого Пушкина огромное влияние оказали труды таких классиков русской литературы, как Батюшков, Жуковский, Фонвизин и Радищев. <br>
+Пушкин оканчивает лицей в 1817 году и выпускается в чине коллежского секретаря 12-го класса, после чего его определяют в Коллегию иностранных дел. <br><br><br>
+
+<span class="span1">Творчество поэта</span> <br><br><br>
+
+В 1819 году Пушкина принимают членом литературно-театрального сообщества «Зелёная лампа». В этот же период он активно работает над поэмой «Руслан и Людмила» (1820). <br>
+В 1821 году Пушкин пишет поэму «Кавказский пленник», которая делает его одним из величайших литераторов среди современников. Через год начинается работа над «Евгением Онегиным» (1823-1832). <br>
+В 1832 году поэт задумывает создать исторический роман о временах пугачевщины, для чего изучает все доступные материалы (многие из них засекречены на то время), объезжает многие места, где проходило восстание. После всех этих путешествий осенью 1833 года пишет «Историю Пугачёва» и «Песни западных славян», а также поэмы «Анджело» и «Медный всадник», начинает работу над повестью «Пиковая дама». <br>
+В это же время Пушкин начинает работу над романом «Дубровский», в котором главному герою приходится стать разбойником. <br> <br><br>
+
+<img src="img/open-book-for-reading-symbol-hand-drawn_599395-224.avif" alt="" class="book1">
+
+<span class="span1">Ссылки</span> <br><br><br>
+
+Политическая лирика Пушкина 1817—1820 гг. («Вольность», «К Чаадаеву», «Деревня») вызвали гнев Александра I, и Александр Сергеевич мог быть сослан в Сибирь. Только благодаря стараниям и влиянию Карамзина, Жуковского и Крылова ссылки в Сибирь удалось избежать. Так, в мае 1820 г. Пушкин под видом служебного перемещения выслан на юг России. <br>
+Во время южной ссылки Пушкин очень увлекся творчеством Байрона. <br>
+В одном из своих писем Пушкин иронически отозвался о религии. Письмо перехватили и донесли Александру I. Результатом стало увольнение Пушкина со службы и его вторая ссылка, в село Михайловское (1824—1826). <br><br><br>
+
+<span class="span1" id="lasthp">Последние годы жизни</span> <br><br><br>
+
+Важно отметить такой момент в биографии Пушкина:  после повышения в чин камер-юнкера, Александр Пушкин принимает решение покинуть службу и подает в отставку. Положение поэта выглядит и вовсе бедственно, поскольку многие произведения Пушкина не допускаются к печати из-за цензуры (например, поэма «Медный всадник»). <br>
+В 1834 году Пушкин дописывает повесть «Пиковая дама», которую немедленно отсылает в журнал «Библиотека для чтения». За повесть он получает высокий гонорар, но решить финансовые вопросы так и не удается. <br>
+В 1836 году Александр Сергеевич Пушкин решает издавать журнал «Современник». Однако популярностью у публики журнал не пользуется. В четвёртом томе этого журнала был впервые напечатан исторический роман «Капитанская дочка». <br>
+В 1837 году между Александром Сергеевичем Пушкиным и Жоржем Дантесом возник конфликт. Пушкин вызывает Дантеса на дуэль, и в результате получает смертельное ранение в живот. <br>
+Император Николай I, зная о тяжелом состоянии поэта, обещает обеспечить достатком семью и выплатить все долги. Впоследствии монарх выполнил все обещания. Умер поэт 29 января (10 февраля) 1837 года. <br>
+                    </p>
+                </div>
+            </section>
+            <img src="img/1600px-Пушкин_Александр_автограф.svg.png" alt="" width="500px" height="100px" class="ghu">
+            <footer>
+                <img src="img/images-QuSW9PW9Z-transformed.png" alt=""> <h1>A. C. Пушкин</h1>
+            </footer>
+            <div class="foot1">
+                <a href="https://vk.com/fezikss">Автор: Урубков Алексей</a>
+                   &copy;
+            </div>
+        </div>
+    </div>
+</body>
+</html>
